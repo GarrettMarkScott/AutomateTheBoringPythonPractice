@@ -1,0 +1,18 @@
+import os
+
+os.listdir('.')
+ 
+file = open('ExampleTextDocument.txt')
+print(file.read())
+
+baconFile = open('ExampleTextDocument.txt','w')
+baconFile.write('I love bacon!\n')
+
+baconFile.close()
+baconFile = open('ExampleTextDocument.txt','a')
+baconFile.write('Bacon is not a vegetable')
+
+baconFile.close()
+content = open('ExampleTextDocument.txt')
+baconFile.close()
+print(content)
